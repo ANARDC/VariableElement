@@ -3,24 +3,56 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		992A828724CF541C00187598 /* OTPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992A828124CF541C00187598 /* OTPPresenter.swift */; };
+		992A828924CF541C00187598 /* OTPProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992A828324CF541C00187598 /* OTPProtocols.swift */; };
+		992A828B24CF541C00187598 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992A828524CF541C00187598 /* OTPView.swift */; };
+		992A828C24CF541C00187598 /* OTPConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992A828624CF541C00187598 /* OTPConfigurator.swift */; };
+		998F862624CF596900C8BB7C /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F862524CF596900C8BB7C /* UILabel.swift */; };
+		998F862824D0412F00C8BB7C /* VSTextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F862724D0412F00C8BB7C /* VSTextField+.swift */; };
+		998F862A24D0413600C8BB7C /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F862924D0413600C8BB7C /* UIStackView.swift */; };
+		998F862E24D0627B00C8BB7C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F862D24D0627B00C8BB7C /* UIColor.swift */; };
+		998F863024D068AD00C8BB7C /* NewCodeLabelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F862F24D068AD00C8BB7C /* NewCodeLabelState.swift */; };
+		998F863224D0699400C8BB7C /* NewCodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F863124D0699400C8BB7C /* NewCodeManager.swift */; };
+		998F863524D06AB400C8BB7C /* OTPInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F863424D06AB400C8BB7C /* OTPInput.swift */; };
+		998F863724D06ABB00C8BB7C /* OTPOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F863624D06ABB00C8BB7C /* OTPOutput.swift */; };
+		998F863924D06E8800C8BB7C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F863824D06E8800C8BB7C /* Observable.swift */; };
+		998F863B24D06EFF00C8BB7C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F863A24D06EFF00C8BB7C /* String.swift */; };
+		998F863D24D075E600C8BB7C /* OTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F863C24D075E600C8BB7C /* OTPError.swift */; };
+		998F863F24D0851400C8BB7C /* VSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F863E24D0851400C8BB7C /* VSTextField.swift */; };
 		99935EC324CF500E0080AAFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99935EC224CF500E0080AAFA /* AppDelegate.swift */; };
 		99935EC524CF500E0080AAFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99935EC424CF500E0080AAFA /* SceneDelegate.swift */; };
-		99935EC724CF500E0080AAFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99935EC624CF500E0080AAFA /* ViewController.swift */; };
-		99935ECA24CF500E0080AAFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99935EC824CF500E0080AAFA /* Main.storyboard */; };
 		99935ECC24CF50100080AAFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99935ECB24CF50100080AAFA /* Assets.xcassets */; };
 		99935ECF24CF50100080AAFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99935ECD24CF50100080AAFA /* LaunchScreen.storyboard */; };
+		B320153438A8572BDC32CD06 /* Pods_VariableElement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F7DF4DC1C81BA241211757 /* Pods_VariableElement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		018F9D75D75A4DB08617C886 /* Pods-VariableElement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VariableElement.release.xcconfig"; path = "Target Support Files/Pods-VariableElement/Pods-VariableElement.release.xcconfig"; sourceTree = "<group>"; };
+		25F7DF4DC1C81BA241211757 /* Pods_VariableElement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VariableElement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		818BC96A2D8B0CBB082E2C89 /* Pods-VariableElement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VariableElement.debug.xcconfig"; path = "Target Support Files/Pods-VariableElement/Pods-VariableElement.debug.xcconfig"; sourceTree = "<group>"; };
+		992A828124CF541C00187598 /* OTPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPPresenter.swift; sourceTree = "<group>"; };
+		992A828324CF541C00187598 /* OTPProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPProtocols.swift; sourceTree = "<group>"; };
+		992A828524CF541C00187598 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		992A828624CF541C00187598 /* OTPConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPConfigurator.swift; sourceTree = "<group>"; };
+		998F862524CF596900C8BB7C /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		998F862724D0412F00C8BB7C /* VSTextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VSTextField+.swift"; sourceTree = "<group>"; };
+		998F862924D0413600C8BB7C /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		998F862D24D0627B00C8BB7C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		998F862F24D068AD00C8BB7C /* NewCodeLabelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCodeLabelState.swift; sourceTree = "<group>"; };
+		998F863124D0699400C8BB7C /* NewCodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCodeManager.swift; sourceTree = "<group>"; };
+		998F863424D06AB400C8BB7C /* OTPInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPInput.swift; sourceTree = "<group>"; };
+		998F863624D06ABB00C8BB7C /* OTPOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPOutput.swift; sourceTree = "<group>"; };
+		998F863824D06E8800C8BB7C /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		998F863A24D06EFF00C8BB7C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		998F863C24D075E600C8BB7C /* OTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPError.swift; sourceTree = "<group>"; };
+		998F863E24D0851400C8BB7C /* VSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSTextField.swift; sourceTree = "<group>"; };
 		99935EBF24CF500E0080AAFA /* VariableElement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VariableElement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99935EC224CF500E0080AAFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99935EC424CF500E0080AAFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		99935EC624CF500E0080AAFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		99935EC924CF500E0080AAFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99935ECB24CF50100080AAFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99935ECE24CF50100080AAFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99935ED024CF50100080AAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,17 +63,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B320153438A8572BDC32CD06 /* Pods_VariableElement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		998F862424CF594500C8BB7C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				998F862524CF596900C8BB7C /* UILabel.swift */,
+				998F862724D0412F00C8BB7C /* VSTextField+.swift */,
+				998F862924D0413600C8BB7C /* UIStackView.swift */,
+				998F862D24D0627B00C8BB7C /* UIColor.swift */,
+				998F863824D06E8800C8BB7C /* Observable.swift */,
+				998F863A24D06EFF00C8BB7C /* String.swift */,
+				998F863E24D0851400C8BB7C /* VSTextField.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		998F863324D06AA100C8BB7C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				998F863424D06AB400C8BB7C /* OTPInput.swift */,
+				998F863624D06ABB00C8BB7C /* OTPOutput.swift */,
+				998F863C24D075E600C8BB7C /* OTPError.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		99935EB624CF500E0080AAFA = {
 			isa = PBXGroup;
 			children = (
 				99935EC124CF500E0080AAFA /* VariableElement */,
 				99935EC024CF500E0080AAFA /* Products */,
+				E82301C55830B9130FA6A210 /* Pods */,
+				F51BDCFB5CAD6AEF48C0D580 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +115,54 @@
 		99935EC124CF500E0080AAFA /* VariableElement */ = {
 			isa = PBXGroup;
 			children = (
+				99935ED624CF51D30080AAFA /* Supporting Files */,
+				998F862424CF594500C8BB7C /* Helpers */,
+				998F863324D06AA100C8BB7C /* Entities */,
+				99935ED724CF51F80080AAFA /* OTP */,
+			);
+			path = VariableElement;
+			sourceTree = "<group>";
+		};
+		99935ED624CF51D30080AAFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				99935EC224CF500E0080AAFA /* AppDelegate.swift */,
 				99935EC424CF500E0080AAFA /* SceneDelegate.swift */,
-				99935EC624CF500E0080AAFA /* ViewController.swift */,
-				99935EC824CF500E0080AAFA /* Main.storyboard */,
 				99935ECB24CF50100080AAFA /* Assets.xcassets */,
 				99935ECD24CF50100080AAFA /* LaunchScreen.storyboard */,
 				99935ED024CF50100080AAFA /* Info.plist */,
 			);
-			path = VariableElement;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99935ED724CF51F80080AAFA /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				992A828524CF541C00187598 /* OTPView.swift */,
+				992A828124CF541C00187598 /* OTPPresenter.swift */,
+				992A828624CF541C00187598 /* OTPConfigurator.swift */,
+				992A828324CF541C00187598 /* OTPProtocols.swift */,
+				998F862F24D068AD00C8BB7C /* NewCodeLabelState.swift */,
+				998F863124D0699400C8BB7C /* NewCodeManager.swift */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		E82301C55830B9130FA6A210 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				818BC96A2D8B0CBB082E2C89 /* Pods-VariableElement.debug.xcconfig */,
+				018F9D75D75A4DB08617C886 /* Pods-VariableElement.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F51BDCFB5CAD6AEF48C0D580 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25F7DF4DC1C81BA241211757 /* Pods_VariableElement.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99935ED324CF50100080AAFA /* Build configuration list for PBXNativeTarget "VariableElement" */;
 			buildPhases = (
+				935A4D5721E6A2F2F0ABDCF1 /* [CP] Check Pods Manifest.lock */,
 				99935EBB24CF500E0080AAFA /* Sources */,
 				99935EBC24CF500E0080AAFA /* Frameworks */,
 				99935EBD24CF500E0080AAFA /* Resources */,
+				81EF48520D65EBE347B7E3FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +227,82 @@
 			files = (
 				99935ECF24CF50100080AAFA /* LaunchScreen.storyboard in Resources */,
 				99935ECC24CF50100080AAFA /* Assets.xcassets in Resources */,
-				99935ECA24CF500E0080AAFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81EF48520D65EBE347B7E3FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VariableElement/Pods-VariableElement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VariableElement/Pods-VariableElement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VariableElement/Pods-VariableElement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		935A4D5721E6A2F2F0ABDCF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VariableElement-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99935EBB24CF500E0080AAFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99935EC724CF500E0080AAFA /* ViewController.swift in Sources */,
+				992A828B24CF541C00187598 /* OTPView.swift in Sources */,
+				998F863924D06E8800C8BB7C /* Observable.swift in Sources */,
+				998F863D24D075E600C8BB7C /* OTPError.swift in Sources */,
+				998F863024D068AD00C8BB7C /* NewCodeLabelState.swift in Sources */,
+				998F862A24D0413600C8BB7C /* UIStackView.swift in Sources */,
 				99935EC324CF500E0080AAFA /* AppDelegate.swift in Sources */,
+				998F862624CF596900C8BB7C /* UILabel.swift in Sources */,
+				998F862824D0412F00C8BB7C /* VSTextField+.swift in Sources */,
+				992A828924CF541C00187598 /* OTPProtocols.swift in Sources */,
 				99935EC524CF500E0080AAFA /* SceneDelegate.swift in Sources */,
+				998F863F24D0851400C8BB7C /* VSTextField.swift in Sources */,
+				992A828C24CF541C00187598 /* OTPConfigurator.swift in Sources */,
+				992A828724CF541C00187598 /* OTPPresenter.swift in Sources */,
+				998F863724D06ABB00C8BB7C /* OTPOutput.swift in Sources */,
+				998F862E24D0627B00C8BB7C /* UIColor.swift in Sources */,
+				998F863524D06AB400C8BB7C /* OTPInput.swift in Sources */,
+				998F863B24D06EFF00C8BB7C /* String.swift in Sources */,
+				998F863224D0699400C8BB7C /* NewCodeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		99935EC824CF500E0080AAFA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				99935EC924CF500E0080AAFA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		99935ECD24CF50100080AAFA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,11 +430,12 @@
 		};
 		99935ED424CF50100080AAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 818BC96A2D8B0CBB082E2C89 /* Pods-VariableElement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 989TVX6JAA;
-				INFOPLIST_FILE = VariableElement/Info.plist;
+				INFOPLIST_FILE = "VariableElement/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +443,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.commodo.VariableElement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		99935ED524CF50100080AAFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 018F9D75D75A4DB08617C886 /* Pods-VariableElement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 989TVX6JAA;
-				INFOPLIST_FILE = VariableElement/Info.plist;
+				INFOPLIST_FILE = "VariableElement/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.commodo.VariableElement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
