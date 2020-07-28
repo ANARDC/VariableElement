@@ -1,0 +1,40 @@
+PODS:
+  - JMMaskTextField-Swift (0.1.3)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxGesture (3.0.2):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - JMMaskTextField-Swift
+  - RxCocoa
+  - RxGesture
+  - RxSwift
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - JMMaskTextField-Swift
+    - RxCocoa
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  JMMaskTextField-Swift: 16aa552605b121285e6c2f0817ab31cea5f4704b
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 60e1b925a7c9a57cdb3c255bcbbe8a6c0eda2788
+
+COCOAPODS: 1.8.4
