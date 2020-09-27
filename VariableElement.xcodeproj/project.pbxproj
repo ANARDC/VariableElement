@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7290035CF69A596A2AA2D76A /* Pods_VariableElement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D29E6B8C635FA974746230 /* Pods_VariableElement.framework */; };
 		992A828724CF541C00187598 /* OTPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992A828124CF541C00187598 /* OTPPresenter.swift */; };
 		992A828924CF541C00187598 /* OTPProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992A828324CF541C00187598 /* OTPProtocols.swift */; };
 		992A828B24CF541C00187598 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992A828524CF541C00187598 /* OTPView.swift */; };
@@ -27,13 +28,11 @@
 		99935EC524CF500E0080AAFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99935EC424CF500E0080AAFA /* SceneDelegate.swift */; };
 		99935ECC24CF50100080AAFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99935ECB24CF50100080AAFA /* Assets.xcassets */; };
 		99935ECF24CF50100080AAFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99935ECD24CF50100080AAFA /* LaunchScreen.storyboard */; };
-		B320153438A8572BDC32CD06 /* Pods_VariableElement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F7DF4DC1C81BA241211757 /* Pods_VariableElement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		018F9D75D75A4DB08617C886 /* Pods-VariableElement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VariableElement.release.xcconfig"; path = "Target Support Files/Pods-VariableElement/Pods-VariableElement.release.xcconfig"; sourceTree = "<group>"; };
-		25F7DF4DC1C81BA241211757 /* Pods_VariableElement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VariableElement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		818BC96A2D8B0CBB082E2C89 /* Pods-VariableElement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VariableElement.debug.xcconfig"; path = "Target Support Files/Pods-VariableElement/Pods-VariableElement.debug.xcconfig"; sourceTree = "<group>"; };
+		272249A5946037FA5D50F41D /* Pods-VariableElement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VariableElement.debug.xcconfig"; path = "Target Support Files/Pods-VariableElement/Pods-VariableElement.debug.xcconfig"; sourceTree = "<group>"; };
+		9788D4E20CA420D41D329686 /* Pods-VariableElement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VariableElement.release.xcconfig"; path = "Target Support Files/Pods-VariableElement/Pods-VariableElement.release.xcconfig"; sourceTree = "<group>"; };
 		992A828124CF541C00187598 /* OTPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPPresenter.swift; sourceTree = "<group>"; };
 		992A828324CF541C00187598 /* OTPProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPProtocols.swift; sourceTree = "<group>"; };
 		992A828524CF541C00187598 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		99935ECB24CF50100080AAFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99935ECE24CF50100080AAFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99935ED024CF50100080AAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5D29E6B8C635FA974746230 /* Pods_VariableElement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VariableElement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,23 +63,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B320153438A8572BDC32CD06 /* Pods_VariableElement.framework in Frameworks */,
+				7290035CF69A596A2AA2D76A /* Pods_VariableElement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F6E8625F44DA7F929600D5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5D29E6B8C635FA974746230 /* Pods_VariableElement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		998F862424CF594500C8BB7C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				998F862524CF596900C8BB7C /* UILabel.swift */,
+				998F863E24D0851400C8BB7C /* VSTextField.swift */,
 				998F862724D0412F00C8BB7C /* VSTextField+.swift */,
 				998F862924D0413600C8BB7C /* UIStackView.swift */,
 				998F862D24D0627B00C8BB7C /* UIColor.swift */,
 				998F863824D06E8800C8BB7C /* Observable.swift */,
 				998F863A24D06EFF00C8BB7C /* String.swift */,
-				998F863E24D0851400C8BB7C /* VSTextField.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -100,7 +108,7 @@
 				99935EC124CF500E0080AAFA /* VariableElement */,
 				99935EC024CF500E0080AAFA /* Products */,
 				E82301C55830B9130FA6A210 /* Pods */,
-				F51BDCFB5CAD6AEF48C0D580 /* Frameworks */,
+				8F6E8625F44DA7F929600D5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,18 +159,10 @@
 		E82301C55830B9130FA6A210 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				818BC96A2D8B0CBB082E2C89 /* Pods-VariableElement.debug.xcconfig */,
-				018F9D75D75A4DB08617C886 /* Pods-VariableElement.release.xcconfig */,
+				272249A5946037FA5D50F41D /* Pods-VariableElement.debug.xcconfig */,
+				9788D4E20CA420D41D329686 /* Pods-VariableElement.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		F51BDCFB5CAD6AEF48C0D580 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				25F7DF4DC1C81BA241211757 /* Pods_VariableElement.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,11 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99935ED324CF50100080AAFA /* Build configuration list for PBXNativeTarget "VariableElement" */;
 			buildPhases = (
-				935A4D5721E6A2F2F0ABDCF1 /* [CP] Check Pods Manifest.lock */,
+				6998E79759B80990DD23FD0D /* [CP] Check Pods Manifest.lock */,
 				99935EBB24CF500E0080AAFA /* Sources */,
 				99935EBC24CF500E0080AAFA /* Frameworks */,
 				99935EBD24CF500E0080AAFA /* Resources */,
-				81EF48520D65EBE347B7E3FB /* [CP] Embed Pods Frameworks */,
+				C87CB286AC0F4E5A6D2E3BEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,24 +233,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		81EF48520D65EBE347B7E3FB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VariableElement/Pods-VariableElement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VariableElement/Pods-VariableElement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VariableElement/Pods-VariableElement-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		935A4D5721E6A2F2F0ABDCF1 /* [CP] Check Pods Manifest.lock */ = {
+		6998E79759B80990DD23FD0D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,6 +253,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C87CB286AC0F4E5A6D2E3BEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VariableElement/Pods-VariableElement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VariableElement/Pods-VariableElement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VariableElement/Pods-VariableElement-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -430,7 +430,7 @@
 		};
 		99935ED424CF50100080AAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 818BC96A2D8B0CBB082E2C89 /* Pods-VariableElement.debug.xcconfig */;
+			baseConfigurationReference = 272249A5946037FA5D50F41D /* Pods-VariableElement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,7 +449,7 @@
 		};
 		99935ED524CF50100080AAFA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 018F9D75D75A4DB08617C886 /* Pods-VariableElement.release.xcconfig */;
+			baseConfigurationReference = 9788D4E20CA420D41D329686 /* Pods-VariableElement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

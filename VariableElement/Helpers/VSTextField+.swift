@@ -12,7 +12,6 @@ extension VSTextField {
   convenience init(superview: UIView, configuring: (VSTextField) -> (), constraints: (VSTextField) -> ()) {
     self.init()
     configuring(self)
-    self.translatesAutoresizingMaskIntoConstraints = false
     constraints(self)
   }
 }

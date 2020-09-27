@@ -6,7 +6,6 @@
 //  Copyright © 2020 Commodo. All rights reserved.
 //
 
-import UIKit
 import RxSwift
 import RxCocoa
 import RxGesture
@@ -87,7 +86,7 @@ extension OTPViewController: OTPUIProtocol {
         label.text          = "Экран получения единовременного пароля"
         label.textColor     = .black
         label.numberOfLines = 0
-    },
+      },
       constraints: { label in
         label.snp.makeConstraints { maker in
           maker.centerX.equalTo(self.view.snp.centerX)
@@ -95,30 +94,32 @@ extension OTPViewController: OTPUIProtocol {
           maker.left.greaterThanOrEqualTo(self.view.snp.left).offset(20)
           maker.right.lessThanOrEqualTo(self.view.snp.right).offset(-20)
         }
-    })
+      }
+    )
   }
   
   func makeNumbersTextFields() {
     self.numbersTextFields = 4 * VSTextField(
-        superview: self.view,
-        configuring: { textField in
-          let elementColor = UIColor.green
-          
-          textField.font               = .systemFont(ofSize: 26, weight: .bold)
-          textField.textAlignment      = .center
-          textField.keyboardType       = .numberPad
-          textField.borderStyle        = .none
-          textField.layer.cornerRadius = 16
-          textField.layer.borderWidth  = 3
-          textField.tintColor          = elementColor
-          textField.textColor          = elementColor
-          textField.layer.borderColor  = elementColor.cgColor
-          
-          textField.setFormatting("#", replacementChar: "#")
+      superview: self.view,
+      configuring: { textField in
+        let elementColor = UIColor.green
+        
+        textField.font               = .systemFont(ofSize: 26, weight: .bold)
+        textField.textAlignment      = .center
+        textField.keyboardType       = .numberPad
+        textField.borderStyle        = .none
+        textField.layer.cornerRadius = 16
+        textField.layer.borderWidth  = 3
+        textField.tintColor          = elementColor
+        textField.textColor          = elementColor
+        textField.layer.borderColor  = elementColor.cgColor
+        
+        textField.setFormatting("#", replacementChar: "#")
       },
-        constraints: { textField in
-          textField.snp.makeConstraints { $0.height.width.equalTo(52) }
-      })
+      constraints: { textField in
+        textField.snp.makeConstraints { $0.height.width.equalTo(52) }
+      }
+    )
   }
   
   func makeNumbersStackView() {
@@ -129,13 +130,14 @@ extension OTPViewController: OTPUIProtocol {
         stackView.axis        = .horizontal
         stackView.spacing     = 31
         stackView.contentMode = .scaleToFill
-    },
+      },
       constraints: { stackView in
         stackView.snp.makeConstraints { maker in
           maker.width.equalTo(301)
           maker.center.equalTo(self.view)
         }
-    })
+      }
+    )
   }
   
   func makeNewCodeLabel() {
@@ -161,14 +163,15 @@ extension OTPViewController: OTPUIProtocol {
         label.attributedText = resultString
         label.numberOfLines  = 0
         
-    },
+      },
       constraints: { label in
         label.snp.makeConstraints { maker in
           maker.top.equalTo(self.numbersStackView.snp.bottom).offset(20)
           maker.left.equalTo(self.view.snp.left).offset(20)
           maker.right.equalTo(self.view.snp.right).offset(-20)
         }
-    })
+      }
+    )
   }
   
   func makeSuccessAlert() {
@@ -196,30 +199,30 @@ extension OTPViewController: UIGestureRecognizerDelegate, UITextFieldDelegate {
     
     if self.currentCode.count > self.previousCode.count {
       switch textField {
-      case self.numbersTextFields[0]:
-        self.numbersTextFields[1].becomeFirstResponder()
-      case self.numbersTextFields[1]:
-        self.numbersTextFields[2].becomeFirstResponder()
-      case self.numbersTextFields[2]:
-        self.numbersTextFields[3].becomeFirstResponder()
-      case self.numbersTextFields[3]:
-        self.numbersTextFields[3].resignFirstResponder()
-      default:
-        return
+        case self.numbersTextFields[0]:
+          self.numbersTextFields[1].becomeFirstResponder()
+        case self.numbersTextFields[1]:
+          self.numbersTextFields[2].becomeFirstResponder()
+        case self.numbersTextFields[2]:
+          self.numbersTextFields[3].becomeFirstResponder()
+        case self.numbersTextFields[3]:
+          self.numbersTextFields[3].resignFirstResponder()
+        default:
+          return
       }
     }
     else {
       switch textField {
-      case self.numbersTextFields[0]:
-        self.numbersTextFields[0].resignFirstResponder()
-      case self.numbersTextFields[1]:
-        self.numbersTextFields[0].becomeFirstResponder()
-      case self.numbersTextFields[2]:
-        self.numbersTextFields[1].becomeFirstResponder()
-      case self.numbersTextFields[3]:
-        self.numbersTextFields[2].becomeFirstResponder()
-      default:
-        return
+        case self.numbersTextFields[0]:
+          self.numbersTextFields[0].resignFirstResponder()
+        case self.numbersTextFields[1]:
+          self.numbersTextFields[0].becomeFirstResponder()
+        case self.numbersTextFields[2]:
+          self.numbersTextFields[1].becomeFirstResponder()
+        case self.numbersTextFields[3]:
+          self.numbersTextFields[2].becomeFirstResponder()
+        default:
+          return
       }
     }
   }

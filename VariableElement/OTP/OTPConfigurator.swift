@@ -13,13 +13,13 @@ final class OTPConfigurator: OTPConfiguratorProtocol {
   
   init(_ view: OTPUIProtocol) {
     let input = OTPInput(userCode: PublishSubject<String>(),
-                          smsCode: PublishSubject<String>(),
-                          newCodeLabelTapRecognizer: PublishSubject<UITapGestureRecognizer>())
+                         smsCode: PublishSubject<String>(),
+                         newCodeLabelTapRecognizer: PublishSubject<UITapGestureRecognizer>())
     let output = OTPOutput(errors: PublishSubject<Error>(),
-                            result: PublishSubject<Bool>())
+                           result: PublishSubject<Bool>())
     
     let newCodeManager = NewCodeManager(newRequestFreezeTime: 10,
-    errorInputLimit: 3)
+                                        errorInputLimit: 3)
     
     self.presenter = OTPPresenter(view, input, output, newCodeManager)
   }

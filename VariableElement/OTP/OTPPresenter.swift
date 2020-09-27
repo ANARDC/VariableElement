@@ -96,16 +96,15 @@ private extension OTPPresenter {
     self.input.newCodeLabelTapRecognizer
       .skip(1)
       .subscribe(onNext: { [unowned self] recognizer in
-        self.newCodeManager.newCodeRequest(
-          with: { currentFreezeTime in
-            self.view.newCodeLabelState = .freezeBeforeErrorInput(currentFreezeTime)
-        },
-          default: {
-            self.view.newCodeLabelState = .beforeErrorInput
-        },
-          afterErrorInput: { errorInputLimit, currentFreezeTime in
-            self.view.newCodeLabelState = .freezeAfterErrorInput(errorInputLimit, currentFreezeTime)
-        })
+        self.newCodeManager.newCodeRequest { currentFreezeTime in
+          self.view.newCodeLabelState = .freezeBeforeErrorInput(currentFreezeTime)
+        }
+        `default`: {
+          self.view.newCodeLabelState = .beforeErrorInput
+        }
+        afterErrorInput: { errorInputLimit, currentFreezeTime in
+          self.view.newCodeLabelState = .freezeAfterErrorInput(errorInputLimit, currentFreezeTime)
+        }
         self.makeCode()
       })
       .disposed(by: self.bag)

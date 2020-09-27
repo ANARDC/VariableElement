@@ -12,7 +12,6 @@ extension UILabel {
   convenience init(superview: UIView, configuring: (UILabel) -> (), constraints: (UILabel) -> ()) {
     self.init()
     configuring(self)
-    self.translatesAutoresizingMaskIntoConstraints = false
     superview.addSubview(self)
     constraints(self)
   }
